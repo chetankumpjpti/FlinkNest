@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    background-color: #101A2C;
+}
+
+.flink_header{
+    max-width: 1536px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 70px;
+}
+.logo_nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.logo{
+    background: linear-gradient(90deg, #5B8CFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    /* font-weight: 500; */
+}
+.nest{
+    color: #5B8CFF;
+}
+.header_nav{
+    display: flex;
+    gap: 20px;
+    
+}
+li{
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.header_icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    font-weight: bolder;
+}
+.header_icon i:nth-child(4){
+    background: linear-gradient(90deg,#5B8CFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.input_section{
+    width: 100%;
+    background-color: wheat;
+    padding: 10px 70px;
+    
+}
+.input{
+    max-width: 1536px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+input{
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 6px 0;
+    outline: none;
+}
+input::placeholder{
+    font-size: 15px;
+}
