@@ -78,11 +78,18 @@ function showMovies(movies){
         const { title, poster_path, release_date, vote_average } = movie;
         const card = document.createElement("div")
         card.classList.add("movie_card")
-        card.innerHTML = `<img src=${IMGPATH + poster_path}  alt="">
-          <div class="img_content">
-            <a>${title}</a>
-            <p>${release_date}</p>
-          </div>`
+        card.innerHTML = `<img src="${IMGPATH + poster_path}" alt="${title || "Movie poster"}">
+
+    <div class="img_content">
+        <a>${title}</a>
+        <div class="movie_info">
+            <p>${release_date || "Release date unavailable"}</p>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                ${vote_average?.toFixed(1) ?? "N/A"}
+            </span>
+        </div>
+    </div>`
           movieContainer.append(card)
     });
 
@@ -137,4 +144,28 @@ async function loadTranding(){
     }
 });
 
+// FAQs
+const Show_icon = document.querySelectorAll(".question")
+
+for(let title of Show_icon){
+    title.addEventListener("click", ()=>{
+    const FAQnext = title.querySelector("p")
+
+    for(let item of Show_icon){
+        const p = item.querySelector("p")
+
+        if(p !== FAQnext){
+            p.style.height = "0px";
+            p.classList.remove("open");
+        }
+    }
+    if (FAQnext.classList.contains("open")) {
+            FAQnext.style.height = "0px";
+            FAQnext.classList.remove("open");
+        } else {
+            FAQnext.style.height = FAQnext.scrollHeight + "px";
+            FAQnext.classList.add("open");
+        }
+})
+}
 

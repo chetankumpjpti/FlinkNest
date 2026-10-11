@@ -180,6 +180,17 @@ img{
     padding: 5px 10px;
     font-weight: 600;
 }
+.today button:first-child {
+    background: #5B8CFF;
+    color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.today button:hover {
+    background: #5B8CFF;
+    color: #FFFFFF;
+    border-radius: 20px;
+}
 .skeleton{
     width: 285px;
     height: 420px;
@@ -239,13 +250,43 @@ img{
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background: #17243A;
+    color: #FFFFFF;
+    border: 1px solid #263650;
+}
+
+.movie_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px #5B8CFF35;
+}
+.movie_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.movie_info span {
+    color: #5B8CFF;
+    white-space: nowrap;
+}
+
+.movie_info span i {
+    color: #FFC857;
 }
 .movie_card img{
     width: 100%;
     height: 350px;
     object-fit: cover;
     display: block;
+    transition: transform 0.4s ease;
 
+}
+.movie_card:hover img {
+    transform: scale(1.05);
 }
 .img_content{
     padding: 15px 5px;
@@ -253,6 +294,9 @@ img{
 .movie_card a{
     margin-bottom: 8px;
     font-size: 18px;
+    display: block;
+    color: #FFFFFF;
+    font-weight: 500;
 }
 
 .movie_card p{
@@ -265,6 +309,7 @@ img{
     width: 100%;
     background-color: #101A2C;
     color: #fff;
+    padding: 40px 0;
 }
 .FAQs_head{
     width: 800px;
@@ -274,6 +319,9 @@ img{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.FAQs_head h2{
+    font-weight: 600;
 }
 .FAQs_Question{
     width: 800px;
@@ -297,7 +345,10 @@ img{
 }
 .question p{
     font-size: 12px;
-    display: none;
+    height: 0;
+    overflow: hidden;
+    color: #AAB8D0;
+    transition: height 0.3s ease;
 }
 .question:hover{
     border: 2px solid #5B8CFF;
@@ -309,6 +360,10 @@ img{
 }
 .sign i{
     cursor: pointer;
+    color: #5B8CFF;
+}
+.open{
+    overflow: visible;
 }
 
 /* footer */
@@ -318,7 +373,7 @@ img{
     background: linear-gradient(135deg, #0B1322, #101A2C);
     color: #FFFFFF;
     padding: 55px 7% 20px;
-    margin-top: 70px;
+    /* margin-top: 70px; */
     border-top: 1px solid #263650;
 }
 
