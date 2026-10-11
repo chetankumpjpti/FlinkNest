@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
   </head>
   <body>
@@ -41,5 +41,140 @@
             <input type="text" placeholder="Search for a  movie, TV show, person....">
         </div>
     </section>
+
+    <!-- Wellcome Slider  -->
+
+    <section class="slider">
+        <div class="img_container">
+            <img src="images\muhd-asyraaf-Ti8UF_rJlYo-unsplash.jpg" alt="">
+            <img src="images\keagan-henman-Jfz6IdxMSuQ-unsplash.jpg" alt="">
+            <img src="images\amjith-s-zh-cgU1n7Q4-unsplash.jpg" alt="">
+            <img src="images\mert-toker-AwhZiUwh_WM-unsplash.jpg" alt="">
+            <img src="images\mark-basarab-1OtUkD_8svc-unsplash.jpg" alt="">
+            <img src="images\felix-mooneeram-evlkOfkQ5rE-unsplash.jpg" alt="">
+            <img src="images/darwin-vegher-dYXkL__ryl0-unsplash.jpg" alt="">
+            
+        </div>
+        <div class="img_text">
+            <h2>Welcome.</h2>
+            <h3>Millions of movies, TV shows and people to discover. Explore now.</h3>
+        </div>
+            <div id="img_Btn">
+            <div class="img_Btn">
+                <i onclick="prev()" class="fa-solid fa-chevron-left prev"></i>
+                <p id="slideTitle">Spider-Man: Brand New Day</p>
+                <i onclick="next()" class="fa-solid fa-angle-right next"></i>
+            </div>
+        </div>
+    </section>
+
+    <!--  Tranding Movies  -->
+
+    <section class="trending_section">
+      <div class="trend_head">
+        <h2>Trending</h2>
+        <div class="today">
+          <button>Today</button>
+          <button>This Week</button>
+        </div>
+      </div>
+      <div class="trending">
+        <div class="movie_card"></div>
+      </div>
+      </section>
+
+      
+      
+      
+<footer class="footer" id="footer">
+
+    <div class="footer_head">
+      <div class="footer_container">
+
+        <!-- Logo & Description -->
+        <div class="footer_about">
+            <h2 class="footer_logo">
+                <i class="fa-solid fa-clapperboard"></i>
+                Flick<span>Nest</span>
+            </h2>
+
+            <p>
+                Your ultimate destination for discovering
+                trending movies, hidden gems and unforgettable stories.
+            </p>
+
+            <div class="footer_socials">
+                <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer_links">
+            <h3>Explore <span class="line"></span></h3>
+            <a href="#">Home</a>
+            <a href="#trending">Trending Movies</a>
+            <a href="#popular">Popular Movies</a>
+            <a href="#top-rated">Top Rated</a>
+        </div>
+
+        <!-- Genres -->
+        <div class="footer_links">
+            <h3>Discover <span class="line"></span></h3>
+            <a href="#">Action</a>
+            <a href="#">Comedy</a>
+            <a href="#">Thriller</a>
+            <a href="#">Sci-Fi</a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer_newsletter">
+            <h3>Stay in the Loop</h3>
+            <p>Get movie recommendations and updates.</p>
+
+            <form class="newsletter_form" id="newsletterForm">
+                <input
+                    type="email"
+                    id="emailInput"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button type="submit" aria-label="Subscribe">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <p id="newsletterMessage" class="newsletter_message"></p>
+        </div>
+
+    </div>
+
+    <div class="footer_bottom">
+        <p>© 2026 FlickNest. All rights reserved.</p>
+
+        <p class="tmdb_text">
+            <i class="fa-solid fa-film"></i>
+            Movie data powered by TMDB
+        </p>
+
+        <button class="back_top" id="backTop">
+            Back to Top <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+    </div>
+
+</footer>
+
+    
   </body>
 </html>
